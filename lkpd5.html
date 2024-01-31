@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //--------- no 5
+        let total = 0;
+        let besar = -Infinity;
+        let kecil = Infinity;
+        let i = 1;
+        
+        do {
+            let input = parseInt(prompt('masukan angka sampai 20 kali'))
+
+            if (isNaN(input)){
+            } else {
+                total += input 
+                if (input > besar) {
+                    besar = input
+                }
+                if (input < kecil) {
+                    kecil = input
+                }
+            }
+
+            i++;
+        } while (i <= 20)
+
+        let rata2 = total/20;
+
+        console.log(`bilangan terbesar = ${besar}`)
+        console.log(`bilangan terkecil = ${kecil}`)
+        console.log(`rata-ratanya = ${rata2}`)
+    </script>
+</body>
+</html>
